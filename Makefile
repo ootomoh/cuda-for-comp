@@ -4,3 +4,6 @@ BIN=for-comp.out
 
 $(BIN): main.cu
 	$(NVCC) $(NVCCFLAGS) -o $@ $<
+
+clean:
+	rm -rf $(BIN)
