@@ -1,5 +1,5 @@
 NVCC=nvcc
-NVCCFLAGS=-std=c++14
+NVCCFLAGS=-std=c++14 -arch=sm_60
 BIN=for-comp.out
 
 $(BIN): main.cu
