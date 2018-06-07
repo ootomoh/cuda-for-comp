@@ -19,7 +19,7 @@ __global__ void dev_kernel_A(const int N,float *ptr){
 ```
 
 ### 動作環境
-- C++ >= c++11
+- C++ >= c++14 (11でもいいかもだけどMakefileを書き換えてね)
 - CUDA >= (人権)
 
 ## 結果
