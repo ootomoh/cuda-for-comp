@@ -7,7 +7,7 @@
 ## 実験プログラム
 - カーネル  
 配列の全要素に-1.0fをかける
-```cuda
+```cpp
 __global__ void dev_kernel_A(const int N,float *ptr){
 	int tid = threadIdx.x + blockIdx.x * blockDim.x;
 	if(tid >= N) return;
