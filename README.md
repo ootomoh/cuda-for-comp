@@ -28,63 +28,67 @@ __global__ void dev_kernel_A(const int N,float *ptr){
 
 
 ```
+array size (N) : 1000
+number of "for" computation (C) : 1000
+ROUND : 3
+
 ##-- ROUND 1
 #-- simple for
-ptr : 0x7f6fb7400000
-Elapsed time : 94946 [us]
+ptr : 0x7fb517400000
+Elapsed time : 94335 [us]
 #-- divided by 2 for
-ptr : 0x7f6fb7400000
-Elapsed time : 51706 [us]
-#-- counter assembled simple for
-ptr : 0x7f6fb7400000
-Elapsed time : 79729 [us]
-#-- counter assembled divided by 2 for
-ptr : 0x7f6fb7400000
-Elapsed time : 36507 [us]
-#-- counter assembled simple for (expressly unrolled)
-ptr : 0x7f6fb7400000
-Elapsed time : 76778 [us]
-#-- counter assembled divided by 2 for (expressly unrolled)
-ptr : 0x7f6fb7400000
-Elapsed time : 33598 [us]
+ptr : 0x7fb517400000
+Elapsed time : 48053 [us]
+#-- N assembled, simple for
+ptr : 0x7fb517400000
+Elapsed time : 78853 [us]
+#-- N assembled, divided by 2 for
+ptr : 0x7fb517400000
+Elapsed time : 36426 [us]
+#-- N assembled, simple, for (expressly unrolled)
+ptr : 0x7fb517400000
+Elapsed time : 74075 [us]
+#-- N assembled, divided by 2, for (expressly unrolled)
+ptr : 0x7fb517400000
+Elapsed time : 33764 [us]
 
 ##-- ROUND 2
 #-- simple for
-ptr : 0x7f6fb7400000
-Elapsed time : 80372 [us]
+ptr : 0x7fb517400000
+Elapsed time : 81008 [us]
 #-- divided by 2 for
-ptr : 0x7f6fb7400000
-Elapsed time : 44132 [us]
-#-- counter assembled simple for
-ptr : 0x7f6fb7400000
-Elapsed time : 73265 [us]
-#-- counter assembled divided by 2 for
-ptr : 0x7f6fb7400000
-Elapsed time : 33454 [us]
-#-- counter assembled simple for (expressly unrolled)
-ptr : 0x7f6fb7400000
-Elapsed time : 73293 [us]
-#-- counter assembled divided by 2 for (expressly unrolled)
-ptr : 0x7f6fb7400000
-Elapsed time : 33423 [us]
+ptr : 0x7fb517400000
+Elapsed time : 44825 [us]
+#-- N assembled, simple for
+ptr : 0x7fb517400000
+Elapsed time : 73965 [us]
+#-- N assembled, divided by 2 for
+ptr : 0x7fb517400000
+Elapsed time : 33696 [us]
+#-- N assembled, simple, for (expressly unrolled)
+ptr : 0x7fb517400000
+Elapsed time : 74229 [us]
+#-- N assembled, divided by 2, for (expressly unrolled)
+ptr : 0x7fb517400000
+Elapsed time : 33869 [us]
 
 ##-- ROUND 3
 #-- simple for
-ptr : 0x7f6fb7400000
-Elapsed time : 80353 [us]
+ptr : 0x7fb517400000
+Elapsed time : 81048 [us]
 #-- divided by 2 for
-ptr : 0x7f6fb7400000
-Elapsed time : 44147 [us]
-#-- counter assembled simple for
-ptr : 0x7f6fb7400000
-Elapsed time : 73164 [us]
-#-- counter assembled divided by 2 for
-ptr : 0x7f6fb7400000
-Elapsed time : 33753 [us]
-#-- counter assembled simple for (expressly unrolled)
-ptr : 0x7f6fb7400000
-Elapsed time : 73292 [us]
-#-- counter assembled divided by 2 for (expressly unrolled)
-ptr : 0x7f6fb7400000
-Elapsed time : 33666 [us]
+ptr : 0x7fb517400000
+Elapsed time : 44849 [us]
+#-- N assembled, simple for
+ptr : 0x7fb517400000
+Elapsed time : 74117 [us]
+#-- N assembled, divided by 2 for
+ptr : 0x7fb517400000
+Elapsed time : 33730 [us]
+#-- N assembled, simple, for (expressly unrolled)
+ptr : 0x7fb517400000
+Elapsed time : 74110 [us]
+#-- N assembled, divided by 2, for (expressly unrolled)
+ptr : 0x7fb517400000
+Elapsed time : 33786 [us]
 ```
