@@ -81,6 +81,10 @@ int main(){
 	const int num_threads = 32;
 	float *dptr;
 
+	std::cout<<"array size (N) : "<<N<<std::endl
+		<<"number of \"for\" computation (C) : "<<C<<std::endl
+		<<"ROUND : "<<ROUND<<std::endl<<std::endl;
+
 	for(int r = 0;r < ROUND;r++){
 		std::cout<<"##-- "<<"ROUND "<<(r+1)<<std::endl;
 		std::cout<<"#-- simple for"<<std::endl;
