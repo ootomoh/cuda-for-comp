@@ -18,6 +18,10 @@ __global__ void dev_kernel_A(const int N,float *ptr){
 }
 ```
 
+### 動作環境
+- C++ >= c++11
+- CUDA >= (人権)
+
 ## 結果
 
 - GF GTX 1080
